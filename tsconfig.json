@@ -1,0 +1,16 @@
+//Permet d'écrire les paramètres de configuration nécessaire à la compilation de typescript 
+// le fichier doit être nommé "tsconfig.json" 
+
+{
+    //Définis les options de compilation
+    "compilerOptions": {
+        "outDir": "dist", // Spécifie le dossier de compiilation
+        "target" :"ES2015", // permet de cibler les versions de navigateur pour la compilation
+        "noEmitOnError": true,// Empèche de compiler si erreur dans le code
+        "strict" : true // Active le mode strict de typescript
+    },
+
+    "files": [
+        "src/index.ts" // Spécifier les fichier qui seront compiler 
+    ]
+}
