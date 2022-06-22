@@ -42,4 +42,14 @@ const compteur2 = <HTMLButtonElement>document.querySelector('#compteur') // Mêm
 //Union type 
 const ab: string | number =  10 // La variable peut être soit de type STRING soit de type NUMBER
 
+//Type -> les typens sont des aliass qui permettent de réutiliser un type à plusieur endroid
+type User = { firsname: string, lastname: string }
 
+const user: User = { firsname: "carter", lastname: "roger" }
+
+//Generic
+function identity<ArgType>(arg: ArgType): ArgType {
+    return arg;
+}
+
+const aa = identity("hello")
